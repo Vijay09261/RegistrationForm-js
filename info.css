@@ -1,0 +1,133 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Center the content on the page */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the table */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style table headers */
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Alternate row colors for better readability */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style the images inside the table */
+img {
+    max-width:15%;
+    height: auto;
+}
+
+/* Add some spacing to the table rows */
+tr {
+    margin-bottom: 10px;
+}
+
+/* Center align table cells */
+td {
+    vertical-align: middle;
+}
+
+/* Add some padding to the top and bottom of the page */
+body {
+    padding: 20px 0;
+}
+/* Style the profile image preview container */
+#imagePreview {
+    display: none; /* Initially hidden */
+    text-align: center; /* Center-align the image */
+    margin-top: 20px; /* Add some top margin for spacing */
+  }
+  
+  /* Style the profile image preview image */
+  #preview {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    border: 2px solid #ccc; /* Add a border around the image */
+    padding: 10px; /* Add some padding around the image */
+    background-color: #f9f9f9; /* Add a light background color */
+  }
+  
+  Here's a CSS style that you can use for the image upload and preview form:
+
+  ```css
+  /* Style for the entire form container */
+  .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+  }
+  
+  /* Style for the form design */
+  .formdesign {
+      margin-bottom: 20px;
+  }
+  
+  /* Style for the upload input field */
+  #profileImageInput {
+      display: none; /* Hide the default file input */
+  }
+  
+  /* Style for the custom file input button */
+  .custom-file-input {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  /* Style for the custom file input button on hover */
+  .custom-file-input:hover {
+      background-color: #0056b3;
+  }
+  
+  /* Style for the image preview container */
+  #imagePreview {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+  }
+  
+  /* Style for the preview image */
+  #preview {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+      padding: 10px;
+      background-color: #f9f9f9;
+  }
+  ```
+  
+  You can add this CSS code to the `<style>` section within your HTML file, or you can save it in a separate CSS file (e.g., "style.css") and link it to your HTML file using the `<link>` element in the `<head>` section of your HTML file.

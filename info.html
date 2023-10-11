@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Information</title>
+    <link rel="stylesheet" href="info.css">
+</head>
+<body>
+    <h1 align="center">Submitted Information</h1>
+
+    <script>
+        // function getQueryParameters() {
+        //     var queryString = window.location.search;
+        //     var params = new URLSearchParams(queryString);
+        //     return params;
+        // }
+
+       
+        // Get the form data from local storage
+let name = localStorage.getItem("name");
+
+let email = localStorage.getItem("email");
+let pan = localStorage.getItem("pan");
+let adhar = localStorage.getItem("adhar");
+let mobile = localStorage.getItem("phone");
+let image = localStorage.getItem("image");
+        document.body.innerHTML += `
+            <table>
+                <tr><td>Name:</td><td>${name}</td></tr>
+                <tr><td>Email:</td><td>${email}</td></tr>
+                <tr><td>Pan:</td><td>${pan}</td></tr>
+                <tr><td>Aadhar:</td><td>${adhar}</td></tr>
+                <tr><td>Mobile Number:</td><td>${mobile}</td></tr>
+                <tr><td>Profile Image:</td><td><img src="${image}" alt="Profile Image"></td></tr>
+            </table>
+        `;
+    
+        
+    </script>
+</body>
+</html>
